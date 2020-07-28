@@ -14,6 +14,9 @@ function Footer() {
           Imersão React da Alura
         </a>
       </p>
+      <span >
+        By  Nivaldo Couto
+      </span>
     </FooterBase>
   );
 }
