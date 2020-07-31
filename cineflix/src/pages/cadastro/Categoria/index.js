@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
+import Button from '../../../components/Button';
 
 
 function CadastroCategoria() {
@@ -50,54 +51,40 @@ function CadastroCategoria() {
 
                    
                     <FormField
-                    label="Nome da Categoria:"
+                    label="Nome da Categoria"
                     type="text"
                     name="nome"
                     value={values.nome}
                     onChange={handleChange}
                     />
 
-                    <div>
-                    <label>
-                        Descrição:
-                        <textarea
-                            type="text"
-                            value={values.descricao}
-                            name="descricao"
-                            onChange={handleChange}
-                        />
-                    </label>
-                    </div>
+                   <FormField
+                    label="Descrição"
+                    type="textarea"
+                    name="descricao"
+                    value={values.descricao}
+                    onChange={handleChange}
+                    />
+
+          
 
                     <FormField
                     label="cor"
                     type="color"
                     name="cor"
-                    value={values.nome}
+                    value={values.cor}
                     onChange={handleChange}
                     />
-                    {/*<div>
-                    <label>
-                        Cor:
-                        <input
-                            type="color"
-                            value={values.cor}
-                            name="cor"
-                            onChange={handleChange}
-                        />
-                    </label>
-                    </div>*/}
-              
 
-                    <button>
+                    <Button>
                         Cadastrar
-                    </button>
+                    </Button>
                 </form>
 
                 <ul>
-                    {categorias.map((categoria, indece) => {
+                    {categorias.map((categoria) => {
                         return (
-                            <li key={`${categoria}${indece}`}>
+                            <li key={`${categoria.nome}`}>
                                 {categoria.nome}
                             </li>
                         )
