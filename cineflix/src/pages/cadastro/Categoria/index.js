@@ -36,7 +36,7 @@ function CadastroCategoria() {
           );  
     }
 */
-useEffect(() => {
+ useEffect(() => {
     if (window.location.href.includes('localhost')) {
       const URL = 'http://localhost:8080/categorias';
       fetch(URL)
@@ -50,6 +50,8 @@ useEffect(() => {
         });
     }
   }, []);
+
+  
 
     return (
             <PageDefault>
