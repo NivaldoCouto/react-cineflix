@@ -1,4 +1,4 @@
-# react-cineflix
+<h1 align="center">React-Cineflix</h1>
 ## Desenvolvimento de um projeto da  EAD Alura tendo como base site NETFLIX na semana da Imersão React.
 
 - 👋 Hi, I’m @NivaldoCouto
