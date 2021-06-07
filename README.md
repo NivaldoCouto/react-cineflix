@@ -1,5 +1,5 @@
 <h1 align="center">React-Cineflix</h1>
-## Desenvolvimento de um projeto da  EAD Alura tendo como base site NETFLIX na semana da Imersão React.
+<h2 align-"center">Desenvolvimento de um projeto da  EAD Alura como base site NETFLIX da Imersão React.</h2>
 
 - 👋 Hi, I’m @NivaldoCouto
 - 👀 I’m interested in software development
